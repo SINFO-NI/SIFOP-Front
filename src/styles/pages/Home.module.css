@@ -1,0 +1,22 @@
+.container{
+
+    background: var(--midnight-blue);
+    height: 100vh;
+    max-width: 100%;
+    margin: 0 8%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 6px -2px #000000;
+    -moz-box-shadow: 0 6px 6px -2px #000000;
+    -webkit-box-shadow: 0 6px 6px -2px #000000;
+    
+}
+
+@media(max-width: 600px){
+    .container{
+        margin: 0;
+    }
+}
+
+
+

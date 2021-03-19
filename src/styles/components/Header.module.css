@@ -1,0 +1,17 @@
+.headerContainer{
+
+    padding: 1.5rem 2rem;
+    
+    display: grid; 
+    grid-template-columns: 5.6rem 2fr; /* Tamanho das colunas */
+    gap: 1px; /* 1 x 16 = 100px */
+    align-content: center; /* Alinhar o conteúdo no centro verticalmente */
+
+}
+
+.headerContainer img{
+
+    width: 73px;
+    height: 83px;
+
+}

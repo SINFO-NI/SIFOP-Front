@@ -1,0 +1,11 @@
+.footerContainer{
+
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+
+}
