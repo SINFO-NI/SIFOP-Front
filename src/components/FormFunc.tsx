@@ -53,11 +53,30 @@ export function FormFunc() {
                 <label for="cargo">Cargo:</label>
 
                     <select name="cargo" id="cargo">
-                    <option value="Motorista">Motorista</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="motorista">Motorista</option>
+                    <option value="assistenteSocial">Assistente Social</option>
+                    <option value="auxAdmin">Auxiliar Administrativo</option>
+                    <option value="nutricionista">Nutricionista</option>
                     </select>
+                </div>
+                <div>
+                <label for="setor">Setor:</label>
+
+                    <select name="setor" id="setor">
+                    <option value="disciplina">Setor de disciplina</option>
+                    <option value="admin">Gerência Administrativa</option>
+                    <option value="patrimonio">Seção de Patrimoôio</option>
+                    <option value="biblioteca">Biblioteca</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+                <div>
+                    <button type="submit">Cadastrar novo cargo</button>
+                </div>
+                <div>
+                    <button type="submit">Cadastrar novo setor</button>
                 </div>
             </form>
 
