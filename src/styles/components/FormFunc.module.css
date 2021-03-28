@@ -19,11 +19,17 @@
 }
 
 .formBtnEnviar{
+    position: absolute;
+    width: 196px;
+    height: 44px;
     background: #2B63CF;
     border-radius: 15px;
 }
 
 .formBtnCadastrar{
+    position: absolute;     
+    width: 381px;
+    height: 57px;
     background: #4A88FF;
     border: 2px solid #000000;
     box-sizing: border-box;
