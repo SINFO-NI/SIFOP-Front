@@ -1,9 +1,12 @@
 .formContainer{
+    background: #DADADA;
+    padding: 1.5rem 2rem;
     position: relative;
-    width: 1148px;
-    height: 1024px;
-
-    background: #DADADA;    
+    display: grid; 
+    grid-template-columns: 5.6rem 2fr; /* Tamanho das colunas */
+    gap: 1px; /* 1 x 16 = 100px */
+    align-content: center; /* Alinhar o conteúdo no centro verticalmente */ 
+     
 }
 
 .formInput2{
@@ -42,7 +45,7 @@
 }
 
 .formBtnCadastrar{
-    position: absolute;     
+    position: relative;     
     width: 381px;
     height: 40px;
     background: #4A88FF;
@@ -50,6 +53,7 @@
     box-sizing: border-box;
     border-radius: 5px;
 }
+
 
 .formSelect{
     position: absolute;

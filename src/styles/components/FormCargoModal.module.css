@@ -1,0 +1,59 @@
+.overlay{
+    background: rgba(242, 243, 245, 0.8);
+    position: fixed; /*Fixo na tela independente do scroll*/
+    /*Ocupar a tela inteira*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*Conteúdo no centro da tela*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer{
+    background: var(--white);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem, 3rem; /*2 - vertical, 3 - lateral*/
+    border-radius: 5px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative; /*Por conta do botão de fechar que terá position absolute*/    
+}
+
+.formInput2{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding:8px;
+    display:block;
+    border: none;
+    border-bottom:1px solid #ccc;
+    width:60%
+}
+
+.formBtn{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 196px;
+    height: 44px;
+    background: #2B63CF;
+    border-radius: 15px;
+}
+
+.button{
+
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    background: transparent; /*Retirar os estilos padrões do botão*/
+    border: 0;
+    font-size: 0px;
+
+
+}

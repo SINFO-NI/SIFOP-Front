@@ -4,6 +4,7 @@ import { Menu } from '../components/Menu';
 import { Footer } from '../components/Footer';
 import styles from '../styles/pages/Home.module.css'
 import { FormFunc } from '../components/FormFunc';
+import { FormCargo } from '../components/FormCargoModal';
 
 export default function Home() {
     return (

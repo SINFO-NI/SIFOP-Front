@@ -1,12 +1,8 @@
-//CSS Único para o Componente ExperienceBar (Não afeta outros componentes)
 import { useContext } from 'react';
 import styles from '../styles/components/FormFunc.module.css';
 
-//Componente ExperienceBar
-export function FormFunc() {
 
-    //const { currentExperience, experienceToNextLevel } = useContext(ChallengesContext);
-    //const percentToNextLevel = Math.round((currentExperience * 100) / experienceToNextLevel);
+export function FormFunc() {
 
     return (
         
@@ -78,8 +74,9 @@ export function FormFunc() {
                     <br />
                     <div>
                         <button className={styles.formBtnCadastrar} type="submit">Cadastrar novo cargo</button>
-                        <br /> <br /> <br />
+                        <br /> <br />
                         <button className={styles.formBtnCadastrar} type="submit">Cadastrar novo setor</button>
+                        <br /> <br /> <br />
                     </div>
                 </form>
             </html>
