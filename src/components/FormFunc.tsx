@@ -1,6 +1,37 @@
 import { useContext } from 'react';
 import styles from '../styles/components/FormFunc.module.css';
+import Modal from 'react-modal';
+import React, { useState } from 'react';
+import styles1 from '../styles/components/FormCargoModal.module.css';
 
+export function FormCargo() {
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+    return (
+        <div className={styles.overlay}>
+            <div className={styles1.formContainer}>
+                <Modal isOpen={modalIsOpen}>
+                    <html>
+                        <br />
+                        <form action="" method="post">
+                            <br />
+                            <div>
+                                <input className={styles1.formInput2} type="text" id="novoCargo" placeholder="Cargo novo" />
+                            </div>
+                            <br /> <br /> <br />
+                            <div>
+                                <button className={styles1.formBtn} type="submit">Salvar</button>
+                            </div>
+                            <button className={styles1.button} type="button" onClick={() => setModalIsOpen(false)}>
+                                <img src="close.svg" alt="Fechar modal"/>
+                            </button>
+                        </form>
+                    </html>
+                </Modal>
+            </div>
+        </div>
+    );
+
+}
 
 export function FormFunc() {
 
@@ -73,9 +104,9 @@ export function FormFunc() {
                     </div>
                     <br />
                     <div>
-                        <button className={styles.formBtnCadastrar} type="submit">Cadastrar novo cargo</button>
+                        <button onClick={FormCargo} className={styles.formBtnCadastrar} type="button">Cadastrar novo cargo</button>
                         <br /> <br />
-                        <button className={styles.formBtnCadastrar} type="submit">Cadastrar novo setor</button>
+                        <button className={styles.formBtnCadastrar} type="button">Cadastrar novo setor</button>
                         <br /> <br /> <br />
                     </div>
                 </form>
@@ -83,5 +114,4 @@ export function FormFunc() {
         </div>
 
     );
-
 }
